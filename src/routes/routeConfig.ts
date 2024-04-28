@@ -1,7 +1,7 @@
 import { ComponentType, lazy, LazyExoticComponent } from 'react';
 
 const Home = lazy(() => import('../pages/Home'));
-const About = lazy(() => import('../pages/About'));
+const Calculate = lazy(() => import('../pages/Calculate'));
 const NotFound = lazy(() => import('../pages/NotFound'));
 
 export type TRoutes = Record<string, string>;
@@ -15,7 +15,7 @@ export type TRouteConfigKeys<T extends TRoutes> = {
 
 export const routes: TRoutes = {
   home: '/',
-  about: '/about',
+  calculate: '/calculate',
   notFound: '*',
 };
 
@@ -24,9 +24,9 @@ export const routeConfig: TRouteConfigKeys<typeof routes> = {
     path: routes.home,
     component: Home,
   },
-  about: {
-    path: routes.about,
-    component: About,
+  calculate: {
+    path: routes.calculate,
+    component: Calculate,
   },
   notFound: {
     path: routes.notFound,
