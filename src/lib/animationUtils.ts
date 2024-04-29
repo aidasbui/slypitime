@@ -16,6 +16,7 @@ export const containerVariants = {
     y: '100dvh',
     transition: {
       ease: 'easeInOut',
+      duration: 0.5,
     },
   },
 };
@@ -38,7 +39,7 @@ export const getTimeCardVariant = (delayFactor: number) => {
       opacity: 0,
       y: '-2rem',
       transition: {
-        delay: 0.8 + delayFactor * 0.2,
+        ease: 'easeInOut',
         duration: 0.5,
       },
     },
