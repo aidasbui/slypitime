@@ -20,7 +20,7 @@ const TimeCard = ({ time, colors, delayFactor }: TTimeCardProps) => {
       animate="visible"
       exit="exit"
     >
-      <p>{time}</p>
+      <p className="font-semibold text-lg">{time}</p>
     </motion.div>
   );
 };
