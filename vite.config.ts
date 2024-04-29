@@ -7,13 +7,15 @@ import webfontDownload from 'vite-plugin-webfont-dl';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    port: 3000,
+  },
+  preview: {
+    port: 3000,
+  },
   build: {
-    rollupOptions: {
-      input: {
-        app: './public/index.html',
-      },
-    },
-    outDir: '../dist',
+    outDir: './dist',
+    emptyOutDir: true,
   },
   plugins: [react(), webfontDownload(), svg()],
   resolve: {
