@@ -35,7 +35,7 @@ const Home = () => {
           </p>
 
           <div className="w-full flex justify-center items-center">
-            <Button className="bg-[#d2c4e7] text-black hover:bg-[#8e81a1] hover:text-white">
+            <Button className="bg-[#d2c4e7] text-black hover:bg-[#e5d8f9]">
               <Link to="/calculate">Sleepy</Link>
             </Button>
           </div>
