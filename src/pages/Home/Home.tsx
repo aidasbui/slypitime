@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import ClockSVG from '@/components/assets/ClockSVG';
 import { Button } from '@/components/ui/button';
@@ -8,6 +8,12 @@ import { containerVariants } from '@/lib/animationUtils';
 import Layout from '../../components/Layout';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate('/calculate');
+  };
+
   return (
     <motion.div
       className="w-full"
@@ -35,8 +41,11 @@ const Home = () => {
           </p>
 
           <div className="w-full flex justify-center items-center">
-            <Button className="bg-[#d2c4e7] text-black hover:bg-[#e5d8f9]">
-              <Link to="/calculate">Sleepy</Link>
+            <Button
+              className="bg-[#d2c4e7] text-black hover:bg-[#e5d8f9]"
+              onClick={handleNavigate}
+            >
+              Sleepy
             </Button>
           </div>
         </div>
