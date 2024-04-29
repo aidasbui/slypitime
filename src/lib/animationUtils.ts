@@ -8,7 +8,7 @@ export const containerVariants = {
     y: 0,
     transition: {
       type: 'spring',
-      delay: 0.8,
+      delay: 0.3,
       duration: 1,
     },
   },
