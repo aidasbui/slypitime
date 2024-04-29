@@ -3,8 +3,8 @@ import { addMinutes, format } from 'date-fns';
 export const getWakeUpTimes = () => {
   const now = new Date();
 
-  const wakeUpTimes = Array.from({ length: 7 }, (_, index) => {
-    const time = addMinutes(now, index * 90);
+  const wakeUpTimes = Array.from({ length: 8 }, (_, index) => {
+    const time = addMinutes(now, index * 90 + 20);
     return format(time, 'kk:mm');
   });
   return wakeUpTimes;

@@ -26,7 +26,7 @@ const Home = () => {
             </h1>
           </div>
 
-          <p className="text-left whitespace-pre-line">
+          <p className="text-left whitespace-pre-line sm:text-center sm:max-w-[400px]">
             {`Welcome to Slypitime! This is a simple app that helps you quickly calculate an estimate of when to set your alarm - based on the length of sleep cycles. 
           
           Click on the button below to see the times you should try waking up at. 
@@ -35,7 +35,7 @@ const Home = () => {
           </p>
 
           <div className="w-full flex justify-center items-center">
-            <Button className="bg-[#d2c4e7] text-black">
+            <Button className="bg-[#d2c4e7] text-black hover:bg-[#8e81a1] hover:text-white">
               <Link to="/calculate">Sleepy</Link>
             </Button>
           </div>
