@@ -5,7 +5,7 @@ export const getWakeUpTimes = () => {
 
   const wakeUpTimes = Array.from({ length: 8 }, (_, index) => {
     const time = addMinutes(now, index * 90 + 20);
-    return format(time, 'kk:mm');
+    return format(time, 'HH:mm');
   });
   return wakeUpTimes;
 };
